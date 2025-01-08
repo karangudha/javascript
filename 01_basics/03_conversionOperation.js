@@ -1,11 +1,11 @@
 let score = "abc";
 
-console.log(typeof score);
+console.log(typeof score); //string
 
 let valueInNumber = Number(score);
-console.log(typeof (score));
+console.log(typeof (score)); //number
 
-console.log(valueInNumber);
+console.log(valueInNumber); //NaN
 
 // To convert datatype we use first letter capital of that datatype, ususally data type 
 // datatype is in small letter. 
@@ -32,10 +32,10 @@ let str1 = "karan"
 let str2 = " kumar"
 
 let str3 = str1 + str2;
-console.log(str3);
+console.log(str3); // karan kumar
 
-console.log(1 + "2");
+console.log(1 + "2"); //12
 
-console.log(1 + 2 + "2");
+console.log(1 + 2 + "2"); //32
 
 //if we do ,  first number and then string and add them then, all the number sum up and form string with string.
