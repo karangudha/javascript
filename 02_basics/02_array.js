@@ -7,16 +7,20 @@ const places = ["gudha", "gotji", "jjn"];
 // scense in js array are vector of c++, means it can store any data type, 
 // for example array can store array also in it.
 
-// when we use push operation on two array , then one array is as its pushed on one 
+// when we use push operation on two array, then one array is as its pushed on one 
 // index of other array.
 
 // to merge two array we have other function.
 
 const newArr = places.concat(marvel); // 
-[ 'gudha', 'gotji', 'jjn', 'karan', 'kumar', 'kumawat' ]
+//[ 'gudha', 'gotji', 'jjn', 'karan', 'kumar', 'kumawat' ]
+
+const newArrr = marvel.concat(places.concat(marvel)); // 
+//[ 'karan', 'kumar', 'kumawat', 'gudha', 'gotji', 'jjn', 'karan', 'kumar', 'kumawat' ]
 
 // concat function return a new array, where as push return the old array.
 console.log(newArr);
+console.log(newArrr);
 
 // Other method to merge two array
 
@@ -30,19 +34,19 @@ const newArr1 = [...marvel, ...places]; //
 console.log(newArr1);
 
 
-// to check give variable is array or not we can use isArray function.
+// to check give variable is array or not, we can use isArray function.
 
 console.log(Array.isArray(marvel)); //true
 console.log(Array.isArray("karan")); //false
 
-// To converet an string or any datatype to array, we have function..
+// To converet an string or any itrable object to array, we have function..
 
 const new1 = Array.from("karan"); //['k', 'a', 'r', 'a', 'n']
 console.log(new1);
 
 //Important: when we are converting array form object then we have to tell
-// whether we have to convert ket to array or value to array or both, if we
-// did't discribe it then it will return empty array.
+// whether we have to convert key to array or value to array or both, if we
+// didn't discribe it then it will return empty array.
 
 console.log(Array.from({name: "karan"})); // []
 
